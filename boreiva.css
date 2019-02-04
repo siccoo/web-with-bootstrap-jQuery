@@ -1,0 +1,152 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+body {
+    background: #eee;
+}
+
+.main-boreiva {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Nav Bar based styles */
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #555;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Social Menu Based Styles */
+
+a.fb {
+    background: url(images/fb.png) no-repeat center;
+    background-size: 80%;
+}
+
+a.in {
+    background: url(images/in.png) no-repeat center;
+    background-size: 80%;
+}
+
+.social a {
+    text-indent: -10000px;
+}
+
+.social {
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+/* Grid vs Flex base styles */
+
+.blocks {
+    margin: 20px;
+}
+
+article {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Flex Styles */
+
+nav ul.social {
+    flex: 1 1 0;
+    display: flex;
+}
+
+nav ul.social li {
+    flex: 1 1 0;
+}
+
+@media screen and (min-width: 768px) {
+
+nav ul {
+    display: flex;
+    /* justify-content: flex-start; */
+}
+
+nav li {
+    flex: 1 1 0;
+    text-decoration-line: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    margin: 0;
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    flex: 0 1 32%;
+    transition: flex-basis 0.2s linear;
+}
+
+article.stack {
+    flex: 0 1 100%;
+}
+
+} 
+/* end media 768 */
+
+#box {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+#box div {
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background: #ccc;
+}
+
+.one{order: 0;}
+.two{order: 0;}
+.three{order: 0;}
+.four{order: 0;}
+
+.head-boreiva h1, h6{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1442da;
+    text-align: center;
+}
